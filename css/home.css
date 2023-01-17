@@ -1,0 +1,276 @@
+@import 'nav.css';
+@import 'footer.css';
+
+.secao-home{
+    width: 100%;
+    height: calc(100vh - 120px);  /* Quando eu coloco background image nao da certo, pq? */
+    background-color: white;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secao-home .logo{
+    width: 100%;
+    height: calc(100vh - 120px);  /* Quando eu coloco background image nao da certo, pq? */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.secao-home .sub-logo{
+    margin-top: 10px;
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 300;
+} */
+
+.produtos{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.categoria-produto{
+    padding: 0 11vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 40px;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container-produtos{
+    padding: 0 10vw;
+    display: flex;   /*ainha lado a lado*/
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.container-produtos::-webkit-scrollbar{
+    display: none;
+} /*esconde a scrollbar da div*/
+
+.card-produtos{
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+    margin-bottom: 90px;
+}
+
+.produto-imagem{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    margin-left: 55px;
+}
+
+.thumb-produto{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.desconto{
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+}
+
+.botao-card{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.card-produtos:hover .botao-card{
+    opacity: 1;
+}
+
+.botao-card:hover{
+    background: #efefef;
+}
+
+.info-produto{
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+    margin-left: 55px;
+}
+
+.marca-produto{
+    text-transform: uppercase;
+}
+
+.descrição-produto{
+    width: 200px;
+    height: 20px;
+    line-height: 20px;
+    overflow: visible;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+    margin-bottom: 20px;
+}
+
+.preço{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.preço-real{
+    margin-left: 20px;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.container-coleção{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+
+
+.coleção p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%, -50%);
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.promoções{
+    bottom: none; /*so pra deixar a div (salva) caso queira fazer futuras modificações*/
+    margin-bottom: 60px;
+}
+
+.tabela-produtos{
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promoções-produto{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 40px;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card-promoções{
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.desconto-promo{
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ff7d7d;
+    right: 115px;
+    top: 10px;
+}
+
+.botao-card-promoção{
+    position: absolute;
+    bottom: 10px;
+    left: 35%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 50%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.card-promoções:hover .botao-card-promoção{
+    opacity: 1;
+}
+
+.botao-card-promoção:hover{
+    background: #efefef;
+}
+
+.informações-loja{
+    height: 50px;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.letra-fundo{
+    color: #a9a9a9;
+    padding-left: 50px;
+}
+
+.pre-btn, .pro-btn{
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255,255,0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+}
+
+
+.pre-btn{
+    left: 0;
+    transform: rotate(180deg);
+    margin-top: 800px;
+}
+
+.pro-btn{
+    margin-top: 800px;
+    right: 0;
+}
+
+.pre-btn img, .pro-btn img{
+    opacity: 0.2;
+}
+
+.pre-btn:hover img, .pro-btn:hover img{
+    opacity: 1;
+}

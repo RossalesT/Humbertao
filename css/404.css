@@ -1,0 +1,14 @@
+.fourofour-imagem{
+    display: block;
+    margin: 60px auto;
+}
+
+.fourofour{
+    text-align: center;
+    text-transform: capitalize;
+    color: #383838;
+}
+
+.fourofour a{
+    color: #383838;
+}

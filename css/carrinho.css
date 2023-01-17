@@ -1,0 +1,59 @@
+.pqn-container.cart-pag{
+    margin:80 auto;
+    padding: 0 700px;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart.info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #383838;
+    font-weight: normal;
+}
+
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #383838;
+    font-size: 12px;
+}
+
+td img{
+    margin-right: 10px;
+}
+
+.preço-total{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.preço-total table{
+    border-top: 3px solid #383838;
+    width: 100%;
+    max-width: 350px;
+}
+
+td:last-child{
+    text-align: right;
+}
+
+th:last-child{
+    text-align: right;
+}
