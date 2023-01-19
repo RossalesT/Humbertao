@@ -1,6 +1,12 @@
 @import 'nav.css';
 @import 'footer.css';
 
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
 .secao-home{
     width: 100%;
     height: calc(100vh - 120px);  /* Quando eu coloco background image nao da certo, pq? */
@@ -61,6 +67,9 @@
     height: 450px;
     margin-right: 40px;
     margin-bottom: 90px;
+}
+.imagem-bugada {
+    max-width: 100%;
 }
 
 .produto-imagem{
@@ -146,10 +155,9 @@
 }
 
 .container-coleção{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
